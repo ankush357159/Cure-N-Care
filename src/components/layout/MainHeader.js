@@ -39,27 +39,76 @@ const MainHeader = () => {
     setOpen(false);
   };
 
-  const handleDesign = (event) => {
+  const handleBackPain = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
     setOpen(false);
-    router.push("/");
+    router.push(`/backpain`);
   };
-  const handleDevelopment = (event) => {
+  const handleNeckPain = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
     setOpen(false);
-    router.push("/");
+    router.push(`/neckpain`);
   };
 
-  const handleSeo = (event) => {
+  const handleJointPain = (event) => {
     if (anchorRef.current && anchorRef.current.contains(event.target)) {
       return;
     }
     setOpen(false);
-    router.push("/");
+    router.push(`/jointpain`);
+  };
+  const handleArthritis = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/arthritis`);
+  };
+  const handleShoulderPain = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/shoulderpain`);
+  };
+  const handleTendonitis = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/tendonitis`);
+  };
+  const handleStrokeRehabilitation = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/stroke`);
+  };
+  const handleDiabetes = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/diabetes`);
+  };
+  const handleSpinalCordInjury = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/spinalcord-injury`);
+  };
+  const handleSpasticity = (event) => {
+    if (anchorRef.current && anchorRef.current.contains(event.target)) {
+      return;
+    }
+    setOpen(false);
+    router.push(`/spasticity`);
   };
 
   function handleListKeyDown(event) {
@@ -155,22 +204,64 @@ const MainHeader = () => {
                       }}
                     >
                       <MenuItem
-                        onClick={handleDesign}
+                        onClick={handleBackPain}
                         sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
                       >
                         Back Pain
                       </MenuItem>
                       <MenuItem
-                        onClick={handleDevelopment}
+                        onClick={handleNeckPain}
                         sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
                       >
-                        Arthirtis
+                        Neck Pain
                       </MenuItem>
                       <MenuItem
-                        onClick={handleSeo}
+                        onClick={handleJointPain}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Joint Pain
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleArthritis}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Arthritis
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleShoulderPain}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Shoulder Pain
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleTendonitis}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Tendonitis
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleStrokeRehabilitation}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Stroke Rehabilitation
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleDiabetes}
                         sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
                       >
                         Diabetes
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleSpinalCordInjury}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Spinalcord Injury
+                      </MenuItem>
+                      <MenuItem
+                        onClick={handleSpasticity}
+                        sx={{ "&:hover": { backgroundColor: "#0062b8" } }}
+                      >
+                        Spasticity
                       </MenuItem>
                     </MenuList>
                   </ClickAwayListener>

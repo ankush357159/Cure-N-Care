@@ -168,6 +168,7 @@ const SubHeader = () => {
                   lg: "1.2em",
                 },
                 maxWidth: { xs: "10em", sm: "12em", md: "14em", lg: "14em" },
+                "&:hover": { backgroundColor: "#ff6200" },
               }}
             >
               Request Appointment

@@ -9,8 +9,8 @@ import createEmotionCache from "../src/createEmotionCache";
 import InfoHeader from "../src/components/layout/InfoHeader";
 import SubHeader from "../src/components/layout/SubHeader";
 import MainHeader from "../src/components/layout/MainHeader";
+import Footer from "../src/components/layout/Footer";
 // import SubFooter from "../src/components/layout/SubFooter";
-// import Footer from "../src/components/layout/Footer";
 
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
@@ -31,9 +31,9 @@ export default function MyApp(props) {
 
           {Component.getLayout(<Component {...pageProps} />)}
 
+          <Footer />
           {/* <Component {...pageProps} /> */}
-          {/* <SubFooter />
-          <Footer /> */}
+          {/* <SubFooter /> */}
         </ThemeProvider>
       </CacheProvider>
     );
@@ -50,8 +50,8 @@ export default function MyApp(props) {
         <SubHeader />
         <MainHeader />
         <Component {...pageProps} />
-        {/* <SubFooter />
-        <Footer /> */}
+        {/* <SubFooter /> */}
+        <Footer />
       </ThemeProvider>
     </CacheProvider>
   );
