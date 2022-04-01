@@ -16,6 +16,8 @@
     "@mui/material": "^5.5.0",
     "@mui/styled-engine-sc": "^5.4.2",
     "framer-motion": "^6.2.8",
+    "google-map-react": "^2.1.10",
+    "mapbox-gl": "^2.7.1",
     "next": "12.1.0",
     "next-seo": "^5.1.0",
     "react": "17.0.2",

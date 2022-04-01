@@ -276,11 +276,11 @@ const MainHeader = () => {
             </Typography>
           </Link>
 
-          <Link href={"/testimonials"} passHref={true}>
+          {/* <Link href={"/testimonials"} passHref={true}>
             <Typography sx={{ cursor: "pointer", fontWeight: 600 }}>
               TESTIMONIALS
             </Typography>
-          </Link>
+          </Link> */}
         </Toolbar>
       </AppBar>
     </AppbarContainer>
